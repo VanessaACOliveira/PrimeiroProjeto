@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('./reset.css');
+
+:root {
+   
+    --fonte-principal: 'Montserrat';
+    --cor-texto: #9B4444;
+    --cor-bordas: #C68484;
+    --cor-cabecalho: #A3C9AA;
+    --cor-de-fundo: #EEEEEE;
+}
+
+.cabecalho {
+    background-color: var(--cor-cabecalho);
+    font-size: 24px;
+    font-family: Montserrat;
+    justify-content: left;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.cabecalho__botao {
+    display: none;
+    text-decoration: none;
+    background-color: var(--cor-cabecalho);
+}
+
+.apresentacao {
+    background-color: var(--cor-de-fundo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2em;
+        
+}
+
+.apresentacao__texto__titulo {
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto);
+    font-size: 24px;
+    font-weight: 400;
+    padding: 2em;
+}
+
+.apresentacao__texto__paragrafo {
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto);
+    font-size: 18px;
+    font-weight: 300;
+    padding: 2em;
+    text-align: justify;
+    
+}
+
+.apresentacao__imagem {
+    position: relative;
+    padding: 3em;
+
+}
+
+.rodape {
+    color: var(--cor-texto);
+    font-family: var(--fonte-principal);
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    background-color: var(--cor-cabecalho);
+    padding: 1em;
+    text-decoration: none;
+}      
+    
+@media screen and (min-width: 1024px) {
+    
+    .apresentacao {
+        display: flex;
+        flex-direction: row;
+    } 
+
+    .apresentacao__imagem {
+        position: relative;
+        margin: 1em;
+    }
+    .rodape {
+       padding: 1em;
+       display: flex;
+       align-items: center;
+    }
+} 
